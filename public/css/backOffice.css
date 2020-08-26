@@ -1,0 +1,54 @@
+#bo_header{
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#bo_header_link_1, #bo_header_link_2 {
+    text-align: center;
+    padding: 15px 0;
+    background: lightgray;
+    border: 1px solid #b3b3cc;
+}
+
+#bo_header_link_1:hover, #bo_header_link_2:hover {
+    background: darkgrey;
+    transition-duration: 0.3s;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#list_articles {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #articles p{
+        text-align: center;
+    }
+}
+
+
+
+#form_article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button, h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.single_category {
+    justify-content: space-between;
+}

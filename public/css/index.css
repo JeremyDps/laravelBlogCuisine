@@ -1,0 +1,103 @@
+/* ABOUT */
+
+.about-description {
+    background: gainsboro;
+}
+
+.about-description-container {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.data-search-btn {
+    margin: 0 auto;
+}
+
+.about-description-container p small {
+    color: darkgray;
+}
+
+.about-description-container form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* SUGGESTIONS */
+
+#tops, #plats, #sport {
+    margin-top: 60px;
+}
+
+#tops h2, #plats h2, #sport h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.right {
+    border-right: 1px solid gainsboro;
+}
+
+.bottom {
+    border-bottom: 1px solid gainsboro;
+}
+
+.article-bloc {
+    margin: 35px 25px;
+}
+
+.article-bloc-description {
+    margin: 5px 3px;
+}
+
+.article-bloc-img {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-bloc-img img {
+    width: 95%;
+}
+
+.btn-other-articles {
+    width: 250px;
+}
+
+#btn-all-articles button {
+    width: 330px;
+}
+
+#btn-other-articles, #btn-all-articles {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+    .article-bloc-img img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .article-bloc-img img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article-bloc-description {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .article-bloc-description h3 {
+        text-align: center;
+    }
+
+    .article-bloc-img img {
+        width: 100%;
+    }
+}

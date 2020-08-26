@@ -1,0 +1,88 @@
+.article-title {
+    text-align: center;
+}
+
+.img-article {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.img-article p img{
+    width: 100%;
+}
+
+.article-header {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.stats {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 8px 8px;
+}
+
+.article-ingredients h2, .article-etapes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-ingredients ul li, .article-etapes ul li {
+    margin-bottom: 8px;
+}
+
+.video {
+    margin: 0 auto;
+}
+
+.video h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.suggestions {
+    margin: 0 auto;
+}
+
+.suggestions h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.other-article {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.other-article div p img {
+    width: 100%;
+}
+
+.other-article div p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#comment form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#send-message {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#message {
+    margin: 0 auto;
+}
+
+#message .container div {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

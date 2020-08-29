@@ -99,7 +99,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="article-bloc-description article-bloc-img">
-                                        <img src="../../../{{ $a->image }}">
+                                        <img src="../../../../{{ $a->image }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

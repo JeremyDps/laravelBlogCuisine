@@ -86,7 +86,7 @@
                                             @endforeach
                                         </p>
                                         <div class="article-bloc-description-button">
-                                            <a href="../article/{{ $a->id }}" type="button" class="btn btn-outline-success">Aller voir l'article</a>
+                                            <a href="../../article/{{ $a->id }}" type="button" class="btn btn-outline-success">Aller voir l'article</a>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="article-bloc-description article-bloc-img">
-                                        <img src="../{{ $a->image }}">
+                                        <img src="../../../../{{ $a->image }}">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -116,7 +116,7 @@
                                             @endforeach
                                         </p>
                                         <div class="article-bloc-description-button">
-                                            <a href="article/{{ $a->id }}" type="button" class="btn btn-outline-success">Aller voir l'article</a>
+                                            <a href="../../article/{{ $a->id }}" type="button" class="btn btn-outline-success">Aller voir l'article</a>
                                         </div>
                                     </div>
                                 </div>

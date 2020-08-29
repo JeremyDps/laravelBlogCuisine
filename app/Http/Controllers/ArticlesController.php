@@ -15,7 +15,7 @@ class ArticlesController extends Controller
 {
     public function ArticlesInHomepage() {
 
-        $tops_articles = Article::orderBy('likes', 'DESC')
+        $tops_articles = Article::orderBy('date', 'DESC')
             ->limit(4)
             ->get();
 
@@ -151,7 +151,11 @@ class ArticlesController extends Controller
         $article->portion = $request->input('portion');
         $article->description = $request->input('description');
         $article->image = 'images/' . $request->input('image');
-        $article->video = 'video/' . $request->input('video');
+
+        if($request->input('video')) {
+            $article->video = 'video/' . $request->input('video');
+        }
+
         $article->pays = $request->input('pays');
         $article->likes = 0;
 

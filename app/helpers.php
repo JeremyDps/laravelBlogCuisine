@@ -4,7 +4,7 @@ function create_explode($string) {
     $str = "";
     $mots = explode(" ", $string);
 
-    for($i = 0; $i < 20; $i++) {
+    for($i = 0; $i < 10; $i++) {
         $str .= $mots[$i] . " ";
     }
 

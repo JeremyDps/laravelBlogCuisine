@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('articleHeader')
 
 @section('content')
 
@@ -6,7 +6,7 @@
         <div class="container">
             <h1 class="article-title">{{ $article->nom }}</h1>
             <div class="col-10 col-md-8 img-article">
-                <img src="../{{ $article->image }}">
+                <p><img src="../{{ $article->image }}"></p>
             </div>
 
             <hr>

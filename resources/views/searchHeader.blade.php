@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="search/unique/entree">Les bases</a>
+                        <a class="nav-link" href="../../search/unique/entree">Les bases</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="search/unique/entree">Entrées</a>
+                        <a class="nav-link" href="../../search/unique/entree">Entrées</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="search/unique/plats">Plats</a>
+                        <a class="nav-link" href="../../search/unique/plats">Plats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="search/unique/desserts">Desserts</a>
+                        <a class="nav-link" href="../../search/unique/desserts">Desserts</a>
                     </li>
                 </ul>
             </div>

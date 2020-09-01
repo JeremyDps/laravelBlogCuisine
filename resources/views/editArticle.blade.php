@@ -71,7 +71,8 @@
 
                 <div class="form-group">
                     <label for="image">Image* : </label>
-                    <p><img src="../../{{ $article->image }}"> </p>
+                    <p><img class="col-lg-12" src="../../{{ $article->image }}" alt="image de l'article"> </p>
+                    <input type="file" name="image" id="image" accept="image/png, image/jpeg, image/gif" required>
                 </div>
 
                 @if($article->video)

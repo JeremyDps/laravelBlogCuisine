@@ -112,9 +112,12 @@
 
             @endif
 
+            @if(sizeof($suggestions) > 0)
             <div class="col-10 suggestions">
                 <h2>Ces articles pourraient également vous intéresser</h2>
                 <div class="row">
+
+            @endif
 
                     @foreach($suggestions as $s)
 
@@ -128,9 +131,10 @@
                     </div>
 
                     @endforeach
-
+                    @if(sizeof($suggestions) > 0)
                 </div>
             </div>
+                @endif
         </div>
 
     </section>

@@ -48,7 +48,7 @@
 
                 <div class="form-group">
                     <label for="image">Image* : </label>
-                    <input type="file" name="image" id="image" accept="image/png, image/jpeg, image/gif" required>
+                    <p class="col-12"><input type="file" name="image" id="image" accept="image/png, image/jpeg, image/gif" required></p>
                 </div>
 
                 <div class="form-group">

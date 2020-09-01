@@ -219,6 +219,11 @@ class ArticlesController extends Controller
         $article->difficulte = $request->input('difficulte');
         $article->temps_prepa = $request->input('temps_prepa');
         $article->temps_cuisson = $request->input('temps_cuisson');
+
+        if($request->input('image')) {
+            $article->image = 'images/' . $request->input('image');
+        }
+
         $article->portion = $request->input('portion');
         $article->description = $request->input('description');
         $article->pays = $request->input('pays');
@@ -384,12 +389,12 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->join('article_categorie', 'article_categorie.article_id', '=', 'articles.id')
             ->join('categories', 'article_categorie.categorie_id', '=', 'categories.id')
             ->where('categories.nom', '=', $cat)
             ->where('articles.nom', 'like', "%$data%")
-            ->orWhere('articles.description', '=', "%$data%")
+            ->orWhere('articles.description', 'LIKE', "%$data%")
             ->get();
 
         return view('search', [
@@ -404,7 +409,7 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->join('article_categorie', 'article_categorie.article_id', '=', 'articles.id')
             ->join('categories', 'article_categorie.categorie_id', '=', 'categories.id')
             ->where('categories.nom', '=', $cat)
@@ -423,7 +428,7 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->where('articles.pays', '=', $pays)
             ->where('articles.nom', 'like', "%$data%")
             ->orWhere('articles.description', 'like', "%$data%")
@@ -476,7 +481,7 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->join('article_categorie', 'article_categorie.article_id', '=', 'articles.id')
             ->join('categories', 'article_categorie.categorie_id', '=', 'categories.id')
             ->where('categories.nom', '=', 'Entrées')
@@ -495,7 +500,7 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->join('article_categorie', 'article_categorie.article_id', '=', 'articles.id')
             ->join('categories', 'article_categorie.categorie_id', '=', 'categories.id')
             ->where('categories.nom', '=', 'Plâts')
@@ -513,7 +518,7 @@ class ArticlesController extends Controller
 
         $allPays = Article::distinct()->get(['pays']);
 
-        $allArticles = Article::select('articles.*')
+        $allArticles = Article::distinct()->select('articles.*')
             ->join('article_categorie', 'article_categorie.article_id', '=', 'articles.id')
             ->join('categories', 'article_categorie.categorie_id', '=', 'categories.id')
             ->where('categories.nom', '=', 'Desserts')
